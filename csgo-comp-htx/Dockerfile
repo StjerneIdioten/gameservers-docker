@@ -16,4 +16,5 @@ RUN chown -R steam:steam /steam/csgo/csgo/cfg
 RUN chown -R steam:steam /steam/csgo/csgo/addons/sourcemod/configs
 USER steam
 
-CMD ["./start-comp.sh"]
+ENTRYPOINT ["./start-comp.sh"]
+CMD ["0"]

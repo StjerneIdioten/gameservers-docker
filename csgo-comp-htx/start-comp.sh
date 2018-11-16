@@ -3,6 +3,8 @@
 # classic competitive
 export GAME_TYPE=0
 export GAME_MODE=1
+export SV_HOSTNAME="HTX-LAN Competitive $1"
+export SV_PASSWORD="HTX-LAN$1"
 
 export LAN=1
 export MAXPLAYERS=11

@@ -56,4 +56,4 @@ echo "This is the ip $SERVER_IP"
 PORT_MAPPING="-p 27015:27015"
 
 echo docker run --tty --interactive $NETWORK $PORT_MAPPING $RESTART $NAME $MOUNTS $OTHER_DOCKER_OPTS $TYPE $@
-docker run --tty --interactive $NETWORK $PORT_MAPPING $RESTART $NAME $MOUNTS $OTHER_DOCKER_OPTS $TYPE $@
+docker run --tty --interactive $NETWORK $PORT_MAPPING $RESTART $NAME $MOUNTS $OTHER_DOCKER_OPTS $TYPE $@ $SERVER_INDEX
