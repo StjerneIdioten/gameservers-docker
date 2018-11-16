@@ -9,8 +9,11 @@ RUN timeout --preserve-status 15 ./srcds_run -game csgo  || true
 ADD HTX-LAN-18/second_run/cfg/ /steam/csgo/csgo/cfg/
 ADD start-comp.sh /steam/csgo/
 
+ADD HTX-LAN-18/second_run/addons/sourcemod/configs/ /steam/csgo/csgo/addons/sourcemod/configs/
+
 USER root
 RUN chown -R steam:steam /steam/csgo/csgo/cfg
+RUN chown -R steam:steam /steam/csgo/csgo/addons/sourcemod/configs
 USER steam
 
 CMD ["./start-comp.sh"]
